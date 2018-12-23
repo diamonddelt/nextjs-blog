@@ -1,16 +1,16 @@
 import Link from 'next/link'
 
-const linkStyle = {
+const buttonStyle = {
     marginRight: 20
 }
 
 const Header = () => (
     <div>
         <Link prefetch href="/">
-            <button style={linkStyle}>home</button>
+            <button style={buttonStyle}>home</button>
         </Link>
         <Link prefetch href="/about">
-            <button style={linkStyle}>about</button>
+            <button style={buttonStyle}>about</button>
         </Link>
     </div>
 )
