@@ -1,15 +1,13 @@
-import Link from 'next/link'
+// import Link from 'next/link'
+import Header from '../components/Header'
 
 const Index = () => (
     <div>
+        <Header />
         <p>
             <h2>Ryan Rasti</h2>
             Github: diamonddelt
         </p>
-
-        <Link prefetch href="/about">
-            <button style={{ fontSize: 15}}>about</button>
-        </Link>
     </div>
 )
 
