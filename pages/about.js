@@ -8,8 +8,8 @@ export default () => (
             <li>Fitness Enthusiast</li>
         </ul>
 
-        <Link href="/index">
-            <a style={{ fontSize: 20}}>home</a>
+        <Link prefetch href="/index">
+            <button style={{ fontSize: 15}}>home</button>
         </Link>
     </div>
 )

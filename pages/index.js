@@ -7,8 +7,8 @@ const Index = () => (
             Github: diamonddelt
         </p>
 
-        <Link href="/about">
-            <a style={{ fontSize: 20}}>about</a>
+        <Link prefetch href="/about">
+            <button style={{ fontSize: 15}}>about</button>
         </Link>
     </div>
 )
