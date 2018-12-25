@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const BlogPostLink = (props) => (
     <li>
-        <Link href={`/blogpost?title=${props.title}`}>
+        <Link as={`/p/${props.id}`} href={`/blogpost?title=${props.title}`}>
             <a>{props.title}</a>
         </Link>
     </li>
@@ -17,8 +17,8 @@ const Index = () => (
 
             <h3>Posts</h3>
             <ul>
-                <BlogPostLink title="Exploring Existential Ennui"/>
-                <BlogPostLink title="What is Next.js and why should I care?"/>
+                <BlogPostLink id="exploring-existential-ennui" title="Exploring Existential Ennui"/>
+                <BlogPostLink id="what-is-nextjs" title="What is Next.js and why should I care?"/>
             </ul>
         </p>
     </Layout>
